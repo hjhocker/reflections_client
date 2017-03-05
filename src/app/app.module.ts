@@ -4,10 +4,14 @@ import { FormsModule } from '@angular/forms';
 import { HttpModule } from '@angular/http';
 
 import { AppComponent } from './app.component';
+import { SkillComponent } from './skill/skill.component';
+import { NavigationComponent } from './navigation/navigation.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    SkillComponent,
+    NavigationComponent
   ],
   imports: [
     BrowserModule,
@@ -17,4 +21,5 @@ import { AppComponent } from './app.component';
   providers: [],
   bootstrap: [AppComponent]
 })
+
 export class AppModule { }
