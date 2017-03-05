@@ -1,10 +1,7 @@
 import {Component, View} from 'angular2/core';
 
 @Component({
-  selector: 'reflections-client'
-})
-
-@View({
+  selector: 'harrison-reflections-client',
   templateUrl: 'reflections-client.html'
 })
 

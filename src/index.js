@@ -3,13 +3,10 @@ import {bootstrap} from 'angular2/platform/browser';
 import {ReflectionsClient} from 'reflections-client';
 
 @Component({
-  selector: 'main'
-})
-
-@View({
+  selector: 'main',
   directives: [ReflectionsClient],
   template: `
-    <reflections-client></reflections-client>
+    <harrison-reflections-client></harrison-reflections-client>
   `
 })
 
