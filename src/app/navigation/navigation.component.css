@@ -1,10 +1,38 @@
 div.box {
-  background-color: black;
+  margin-top: 10px;
+  background-color: ivory;
   margin-right: auto;
   margin-left: auto;
   width: 90%;
-  height: 1000px;
+
+  border-style: solid;
+  border-width: 1px;
+  border-color: lightgray;
 
   color: gray;
   text-align: center;
+}
+
+div.simple-border {
+  border-style: solid;
+  border-width: 1px;
+  border-color: lightgray;
+}
+
+div.skill-button {
+  overflow: hidden;
+  position: relative;
+  height: 200px;
+}
+
+div.education-button {
+  height: 200px;
+}
+
+div.experience-button {
+  height: 200px;
+}
+
+div.row-container {
+  height: 600px;
 }
