@@ -1,15 +1,26 @@
+#container {
+  display: flex;                  /* establish flex container */
+  flex-direction: row;            /* default value; can be omitted */
+  flex-wrap: nowrap;              /* default value; can be omitted */
+  justify-content: space-between; /* switched from default (flex-start, see below) */
+  background-color: lightyellow;
+}
+#container > div {
+  width: 100px;
+  height: 100px;
+  border: 2px dashed red;
+}
+
+/*div.container {
+  width: 100%;
+  margin: auto;
+}
+
 div.box {
-  margin-top: 10px;
-  background-color: ivory;
-  margin-right: auto;
-  margin-left: auto;
-  width: 90%;
-
-  border-style: solid;
-  border-width: 1px;
-  border-color: lightgray;
-
-  color: gray;
+  background-color: black;
+  color: white;
+  text-align: center;
+  margin-top: 50px;
   text-align: center;
 }
 
@@ -17,22 +28,17 @@ div.simple-border {
   border-style: solid;
   border-width: 1px;
   border-color: lightgray;
+  border-radius: 5px;
 }
 
 div.skill-button {
-  overflow: hidden;
-  position: relative;
-  height: 200px;
+  float: left;
 }
 
 div.education-button {
-  height: 200px;
+  margin:0 auto;
 }
 
 div.experience-button {
-  height: 200px;
-}
-
-div.row-container {
-  height: 600px;
-}
+  float:right;
+}*/
