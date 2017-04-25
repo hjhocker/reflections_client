@@ -9,6 +9,14 @@ export class NavigationComponent implements OnInit {
 
   constructor() { }
 
+  str = "80";
+  parsedStr = parseInt(str);
+  quarter = parsedStr / 4;
+
+  if (parsedStr < 10) {
+    // ...
+  }
+
   ngOnInit() {
   }
 
