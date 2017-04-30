@@ -3,42 +3,19 @@
   flex-direction: row;            /* default value; can be omitted */
   flex-wrap: nowrap;              /* default value; can be omitted */
   justify-content: space-between; /* switched from default (flex-start, see below) */
-  background-color: lightyellow;
 }
+
 #container > div {
   width: 100px;
   height: 100px;
   border: 2px dashed red;
 }
 
-/*div.container {
-  width: 100%;
-  margin: auto;
-}
-
-div.box {
-  background-color: black;
-  color: white;
-  text-align: center;
-  margin-top: 50px;
-  text-align: center;
-}
-
 div.simple-border {
   border-style: solid;
   border-width: 1px;
-  border-color: lightgray;
+  border-color: black;
   border-radius: 5px;
+  color: black;
+  text-align: center;
 }
-
-div.skill-button {
-  float: left;
-}
-
-div.education-button {
-  margin:0 auto;
-}
-
-div.experience-button {
-  float:right;
-}*/
