@@ -7,9 +7,12 @@ import { AppComponent } from './app.component';
 import { SkillComponent } from './skill/skill.component';
 import { NavigationComponent } from './navigation/navigation.component';
 import { EducationComponent } from './education/education.component';
+import { ExperienceComponent } from './experience/experience.component';
 
 const appRoutes: Routes = [
-  {path: 'skills', component: SkillComponent}
+  {path: 'skills', component: SkillComponent},
+  {path: 'education', component: EducationComponent},
+  {path: 'experience', component: ExperienceComponent}
 ];
 
 @NgModule({
@@ -17,7 +20,8 @@ const appRoutes: Routes = [
     AppComponent,
     SkillComponent,
     NavigationComponent,
-    EducationComponent
+    EducationComponent,
+    ExperienceComponent
   ],
   imports: [
     BrowserModule,
