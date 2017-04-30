@@ -19,3 +19,11 @@ div.simple-border {
   color: black;
   text-align: center;
 }
+
+div.margin-right {
+  margin-right: 10px;
+}
+
+div.negative-margin-left {
+  margin-left: -10px;
+}
