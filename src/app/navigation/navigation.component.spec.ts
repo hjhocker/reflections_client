@@ -1,5 +1,5 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
-
+import { RouterModule, Routes, RouterTestingModule  } from '@angular/router';
 import { NavigationComponent } from './navigation.component';
 
 describe('NavigationComponent', () => {
