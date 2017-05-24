@@ -1,0 +1,29 @@
+div.side-bar {
+  background-color: gray;
+  height: 100vh;
+}
+
+div.name {
+  padding-top: 15px;
+  text-align: center;
+  color: black;
+  font-size: 30pt;
+  font-weight: bold;
+  font-family: Garamond;
+}
+
+div.work-experience {
+  padding-top: 70px;
+  text-align: center;
+  color: white;
+  font-size: 14pt;
+  font-family: Futura, Trajan;
+}
+
+div.education {
+  padding-top: 25px;
+  text-align: center;
+  color: white;
+  font-size: 14pt;
+  font-family: Futura, Trajan;
+}
