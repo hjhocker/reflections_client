@@ -4,22 +4,22 @@ import { FormsModule } from '@angular/forms';
 import { RouterModule, Routes } from '@angular/router';
 
 import { AppComponent } from './app.component';
+
 import { SkillComponent } from './skill/skill.component';
-import { NavigationComponent } from './navigation/navigation.component';
 import { EducationComponent } from './education/education.component';
 import { ExperienceComponent } from './experience/experience.component';
 
 const appRoutes: Routes = [
-  {path: 'skills', component: SkillComponent},
+  {path: 'experience', component: ExperienceComponent},
   {path: 'education', component: EducationComponent},
-  {path: 'experience', component: ExperienceComponent}
+  {path: 'previousresearch', component: SkillComponent},
+  {path: 'ots', component: SkillComponent}
 ];
 
 @NgModule({
   declarations: [
     AppComponent,
     SkillComponent,
-    NavigationComponent,
     EducationComponent,
     ExperienceComponent
   ],

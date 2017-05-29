@@ -1,4 +1,5 @@
-import { Component } from '@angular/core';
+import { Component, NgModule } from '@angular/core';
+import { RouterModule, Routes } from '@angular/router';
 
 @Component({
   selector: 'app-root',
@@ -7,5 +8,9 @@ import { Component } from '@angular/core';
 })
 
 export class AppComponent {
-  title = 'app works!';
+  
+  clicked(event) {
+    console.log("clicked on about this site");
+  }
+
 }

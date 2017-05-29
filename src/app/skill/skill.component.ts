@@ -15,7 +15,7 @@ export class SkillComponent implements OnInit {
 
 }
 
-export class Skill {
+class Skill {
   name: string;
   yearsOfExperience: number;
   proficiency: string;

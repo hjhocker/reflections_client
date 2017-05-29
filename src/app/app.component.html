@@ -1,21 +1,36 @@
-<div>
-  <div class="row">
-    <div class="col-sm-2 side-bar">
-      <div class="work-experience">
-        Work Experience
-      </div>
-      <div class="education">
-        Education
-      </div>
-      <div class="research">
-        Previous Research
-      </div>
-      <div class="personal">
-        Personal
-      </div>
-    </div>
-    <div class="col-sm-10 name">
-      Harrison J. Hocker
-    </div>
+<nav class="navbar navbar-toggleable-md navbar-light bg-faded">
+  <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <a class="navbar-brand">Harrison J. Hocker</a>
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item">
+        <a class="nav-link"
+            routerLink="/experience"
+            routerLinkActive="active" (click)="clicked($event)">Experience</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link"
+            routerLink="/education"
+            routerLinkActive="active" (click)="clicked($event)">Education</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link"
+            routerLink="/previousresearch"
+            routerLinkActive="active" (click)="clicked($event)">Previous Research</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link"
+            routerLink="/ots"
+            routerLinkActive="active" (click)="clicked($event)">About This Site</a>
+      </li>
+    </ul>
+    <form class="form-inline my-2 my-lg-0">
+      <input class="form-control mr-sm-2" type="text" placeholder="Search">
+      <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+    </form>
   </div>
-</div>
+</nav>
+<router-outlet></router-outlet>
