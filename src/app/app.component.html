@@ -1,4 +1,4 @@
-<nav class="navbar navbar-toggleable-md navbar-light bg-faded">
+<nav class="navbar navbar-toggleable-md navbar-light bg-faded nav-bar-color">
   <button class="navbar-toggler navbar-toggler-right"
             type="button"
             data-toggle="collapse"
@@ -8,12 +8,12 @@
             aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
   </button>
-  <a class="navbar-brand">Harrison J. Hocker</a>
+  <a class="nav-link-color navbar-brand">Harrison J. Hocker</a>
 
-  <div class="collapse navbar-collapse" id="navbarSupportedContent">
-    <ul class="navbar-nav mr-auto">
-      <li class="nav-item">
-        <a class="nav-link"
+  <div class="nav-link-color collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="nav-link-color navbar-nav mr-auto">
+      <li class="nav-link-color nav-item">
+        <a class="nav-link-color nav-link"
             routerLink="/experience"
             routerLinkActive="active" (click)="clicked($event)">Experience</a>
       </li>
@@ -39,4 +39,7 @@
     </form>
   </div>
 </nav>
+<div>
+  <h2>more things always here</h2>
+</div>
 <router-outlet></router-outlet>

@@ -13,10 +13,11 @@ import { PageNotFoundComponent } from './page-not-found/page-not-found.component
 
 const appRoutes: Routes = [
   {path: 'experience', component: ExperienceComponent},
+  { path: '',   redirectTo: '/experience', pathMatch: 'full' },
   {path: 'education', component: EducationComponent},
   {path: 'previousresearch', component: ResearchComponent},
   {path: 'ots', component: AboutComponent},
-  {path: '404', component: PageNotFoundComponent}
+  {path: '**', component: PageNotFoundComponent}
 ];
 
 @NgModule({
