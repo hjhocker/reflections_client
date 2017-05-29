@@ -1,45 +1,7 @@
-.side-bar {
-  background-color: gray;
-  height: 100vh;
+.nav-bar-color {
+  background-color: white;
 }
 
-.name {
-  padding-top: 15px;
-  text-align: center;
-  color: black;
-  font-size: 30pt;
-  font-weight: bold;
-  font-family: 'Garamond', sans-serif;
-}
-
-.work-experience {
-  padding-top: 70px;
-  text-align: center;
-  color: white;
-  font-size: 14pt;
-  font-family: 'Futura', 'Trajan', sans-serif;
-}
-
-.education {
-  padding-top: 25px;
-  text-align: center;
-  color: white;
-  font-size: 14pt;
-  font-family: 'Futura', 'Trajan', sans-serif;
-}
-
-.research {
-  padding-top: 25px;
-  text-align: center;
-  color: white;
-  font-size: 14pt;
-  font-family: 'Futura', 'Trajan', sans-serif;
-}
-
-.personal {
-  padding-top: 25px;
-  text-align: center;
-  color: white;
-  font-size: 14pt;
-  font-family: 'Futura', 'Trajan', sans-serif;
+.text {
+  color: red;
 }
