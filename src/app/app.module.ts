@@ -5,7 +5,7 @@ import { RouterModule, Routes } from '@angular/router';
 
 import { AppComponent } from './app.component';
 import { SkillComponent } from './skill/skill.component';
-import { NavigationComponent } from './navigation/navigation.component';
+
 import { EducationComponent } from './education/education.component';
 import { ExperienceComponent } from './experience/experience.component';
 
@@ -19,7 +19,6 @@ const appRoutes: Routes = [
   declarations: [
     AppComponent,
     SkillComponent,
-    NavigationComponent,
     EducationComponent,
     ExperienceComponent
   ],
