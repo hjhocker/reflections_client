@@ -1,6 +1,7 @@
 import { Component, NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { Http, Response } from '@angular/http';
+import { environment } from '../environments/environment';
 
 import { Observable } from 'rxjs/Observable';
 import 'rxjs/add/operator/catch';
@@ -20,7 +21,7 @@ export class AppComponent {
   ngOnInit() {this.getName();}
 
   getName() {
-    this.http.get('http://localhost:9999/api/name/full')
+    this.http.get(environment.apiUrl + '/api/name/full')
                 .map(this.extractName)
                 .catch(this.handleError)
                 .subscribe((data) => this.name = data);
