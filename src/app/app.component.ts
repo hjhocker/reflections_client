@@ -21,7 +21,7 @@ export class AppComponent {
   ngOnInit() {this.getName();}
 
   getName() {
-    this.http.get(environment.apiUrl + '/api/name/full')
+    this.http.get(environment.apiUrl + '/api/name/firstlast')
                 .map(this.extractName)
                 .catch(this.handleError)
                 .subscribe((data) => this.name = data);
