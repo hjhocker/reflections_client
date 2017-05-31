@@ -2,6 +2,19 @@
   background-color: white;
 }
 
-.text {
-  color: red;
+.banner-text {
+  color: darkslategray;
+}
+
+.purple {
+  background-color: darkslategray;
+}
+
+p.jumbotron-text {
+  text-align: center;
+  color: white;
+}
+
+a.nav-link-custom {
+  font-size: 12pt;
 }
