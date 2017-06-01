@@ -6,6 +6,8 @@ import { HttpModule } from '@angular/http';
 
 import { AppComponent } from './app.component';
 
+import { HttpService } from './services/HttpService';
+
 import { EducationComponent } from './education/education.component';
 import { ExperienceComponent } from './experience/experience.component';
 import { AboutComponent } from './about/about.component';
@@ -36,7 +38,7 @@ const appRoutes: Routes = [
     HttpModule,
     RouterModule.forRoot(appRoutes)
   ],
-  providers: [],
+  providers: [HttpService],
   bootstrap: [AppComponent]
 })
 
