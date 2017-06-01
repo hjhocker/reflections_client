@@ -5,14 +5,14 @@
     <p>Here is a summary of my skill set and my proficiencies:</p>
     <table>
       <tr class="line-below">
-        <th class="looking">Skill</th>
-        <th class="looking">Years of Experience</th>
-        <th class="looking">Proficiency</th>
+        <th class="row-text">Skill</th>
+        <th class="row-text">Years of Experience</th>
+        <th class="row-text">Proficiency</th>
       </tr>
       <tr *ngFor="let skill of skills">
-        <th class="looking">{{skill.name}}</th>
-        <th class="looking">{{skill.yearsOfExperience}}</th>
-        <th class="looking">{{skill.proficiency | capitalize}}</th>
+        <th class="row-text">{{skill.name}}</th>
+        <th class="row-text">{{skill.yearsOfExperience}}</th>
+        <th class="row-text">{{skill.proficiency | capitalize}}</th>
       </tr>
     </table>
   </div>

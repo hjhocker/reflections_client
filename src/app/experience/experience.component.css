@@ -7,10 +7,10 @@
   color: darkgray;
 }
 
-th.looking {
+.row-text {
   text-align: center;
 }
 
-tr.line-below {
+.line-below {
   border-bottom: 2pt solid darkgray;
 }
