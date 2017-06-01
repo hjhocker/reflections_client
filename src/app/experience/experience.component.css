@@ -6,3 +6,11 @@
   font-size: 12pt;
   color: darkgray;
 }
+
+.row-text {
+  text-align: center;
+}
+
+.line-below {
+  border-bottom: 2pt solid darkgray;
+}
