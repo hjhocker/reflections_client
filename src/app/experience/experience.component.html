@@ -1,8 +1,10 @@
-<p>
-  I work at General Electric
-</p>
-
-Here are my skills
-<ul>
-  <li *ngFor="let skill of skills">{{skill.name}} {{skill.yearsOfExperience}} {{skill.proficiency}}</li>
-</ul>
+<div class="about-me">
+  <div class="about-me-text">
+    <p>I am currently a Senior Software Engineer at GE Power. My role in the business is primarily to develop applications using modern technologies such Spring, REST and Cloud Foundry.</p>
+    <br/>
+    <p>Here is a summary of my skill set and my proficiencies:</p>
+    <ul>
+      <li *ngFor="let skill of skills">{{skill.name}} {{skill.yearsOfExperience}} {{skill.proficiency}}</li>
+    </ul>
+  </div>
+</div>
