@@ -6,3 +6,11 @@
   font-size: 12pt;
   color: darkgray;
 }
+
+th.looking {
+  text-align: center;
+}
+
+tr.line-below {
+  border-bottom: 2pt solid darkgray;
+}

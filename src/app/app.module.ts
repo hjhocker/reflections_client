@@ -7,6 +7,7 @@ import { HttpModule } from '@angular/http';
 import { AppComponent } from './app.component';
 
 import { HttpService } from './services/HttpService';
+import { CapitalizePipe } from './pipes/CapitalizePipe';
 
 import { EducationComponent } from './education/education.component';
 import { ExperienceComponent } from './experience/experience.component';
@@ -30,7 +31,8 @@ const appRoutes: Routes = [
     ExperienceComponent,
     AboutComponent,
     ResearchComponent,
-    PageNotFoundComponent
+    PageNotFoundComponent,
+    CapitalizePipe
   ],
   imports: [
     BrowserModule,

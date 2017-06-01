@@ -3,8 +3,17 @@
     <p>I am currently a Senior Software Engineer at GE Power. My role in the business is primarily to develop applications using modern technologies such Spring, REST and Cloud Foundry.</p>
     <br/>
     <p>Here is a summary of my skill set and my proficiencies:</p>
-    <ul>
-      <li *ngFor="let skill of skills">{{skill.name}} {{skill.yearsOfExperience}} {{skill.proficiency}}</li>
-    </ul>
+    <table>
+      <tr class="line-below">
+        <th class="looking">Skill</th>
+        <th class="looking">Years of Experience</th>
+        <th class="looking">Proficiency</th>
+      </tr>
+      <tr *ngFor="let skill of skills">
+        <th class="looking">{{skill.name}}</th>
+        <th class="looking">{{skill.yearsOfExperience}}</th>
+        <th class="looking">{{skill.proficiency | capitalize}}</th>
+      </tr>
+    </table>
   </div>
 </div>
