@@ -1,19 +1,21 @@
 <div class="about-me">
-  <div class="about-me-text">
+  <div class="about-me-text col-sm-offset-1 col-sm-10 col-sm-offset-1">
     <p>I am currently a Senior Software Engineer at GE Power. My role in the business is primarily to develop applications using modern technologies such Spring, REST and Cloud Foundry.</p>
     <br/>
-    <p>Here is a summary of my skill set and my proficiencies:</p>
-    <table>
-      <tr class="line-below">
-        <th class="row-text">Skill</th>
-        <th class="row-text">Years of Experience</th>
-        <th class="row-text">Proficiency</th>
-      </tr>
-      <tr *ngFor="let skill of skills">
-        <th class="row-text">{{skill.name}}</th>
-        <th class="row-text">{{skill.yearsOfExperience}}</th>
-        <th class="row-text">{{skill.proficiency | capitalize}}</th>
-      </tr>
-    </table>
+    <div class="center-all-the-things">
+      <p>Here is a summary of my skill set with proficiencies from personal, educational and work experience:</p>
+      <table align="center">
+        <tr class="line-below">
+          <th class="row-text">Skill</th>
+          <th class="row-text">Years of Experience</th>
+          <th class="row-text">Proficiency</th>
+        </tr>
+        <tr *ngFor="let skill of skills">
+          <th class="row-text">{{skill.name}}</th>
+          <th class="row-text">{{skill.yearsOfExperience}}</th>
+          <th class="row-text">{{skill.proficiency | capitalize}}</th>
+        </tr>
+      </table>
+    </div>
   </div>
 </div>

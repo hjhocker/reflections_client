@@ -7,3 +7,9 @@
 .center-text {
   text-align: center;
 }
+
+.dev-cycle {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
