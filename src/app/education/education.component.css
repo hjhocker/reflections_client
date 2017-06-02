@@ -1,0 +1,15 @@
+.education {
+  text-align: center;
+}
+
+.top-row {
+  margin-bottom: 10px;
+}
+
+.bottom-row {
+  margin-top: 10px;
+}
+
+.border-on-bottom {
+  border-bottom: 2px darkgray solid;
+}

@@ -14,3 +14,7 @@
 .line-below {
   border-bottom: 2pt solid darkgray;
 }
+
+.spacing-right {
+  margin-right: 10px;
+}
