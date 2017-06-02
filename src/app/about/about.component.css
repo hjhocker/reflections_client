@@ -1,14 +1,13 @@
-.dev-cycle {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
+.img-fluid {
+  max-width: 100%;
+  height: auto;
 }
 
 .center-text {
   text-align: center;
 }
 
-.dev-cycle {
+.center-table {
   display: block;
   margin-left: auto;
   margin-right: auto;
