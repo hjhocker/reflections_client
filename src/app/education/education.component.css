@@ -14,7 +14,7 @@
   border-bottom: 2px darkgray solid;
 }
 
-hr.line {
+.line {
     border: none;
     height: 1px;
     /* Set the hr color */
