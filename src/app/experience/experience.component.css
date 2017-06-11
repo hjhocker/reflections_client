@@ -4,7 +4,23 @@
 
 .about-me-text {
   font-size: 12pt;
-  color: darkgray;
+  color: black;
+}
+
+.experience-header {
+  font-size: 12pt;
+  font-style: oblique;
+  font-weight: normal;
+  text-decoration: underline;
+}
+
+.line {
+    border: none;
+    height: 1px;
+    /* Set the hr color */
+    color: #333; /* old IE */
+    background-color: darkgray; /* Modern Browsers */
+    width: 85%;
 }
 
 .row-text {
