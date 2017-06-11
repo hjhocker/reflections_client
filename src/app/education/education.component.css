@@ -13,3 +13,12 @@
 .border-on-bottom {
   border-bottom: 2px darkgray solid;
 }
+
+.line {
+    border: none;
+    height: 1px;
+    /* Set the hr color */
+    color: #333; /* old IE */
+    background-color: darkgray; /* Modern Browsers */
+    width: 85%;
+}
