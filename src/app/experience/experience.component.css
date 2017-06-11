@@ -4,7 +4,27 @@
 
 .about-me-text {
   font-size: 12pt;
-  color: darkgray;
+  color: black;
+}
+
+.experience-header {
+  font-size: 12pt;
+  font-style: oblique;
+  font-weight: normal;
+}
+
+.line {
+    border: none;
+    height: 1px;
+    /* Set the hr color */
+    color: #333; /* old IE */
+    background-color: darkgray; /* Modern Browsers */
+    width: 85%;
+}
+
+.center {
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .row-text {
@@ -21,4 +41,5 @@
 
 .center-all-the-things {
   text-align: center;
+  margin: auto;
 }
