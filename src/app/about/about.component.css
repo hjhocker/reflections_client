@@ -12,3 +12,41 @@
   margin-left: auto;
   margin-right: auto;
 }
+
+.source-code-text {
+  font-size: 15pt;
+  color: black;
+}
+
+.line {
+    border: none;
+    height: 1px;
+    /* Set the hr color */
+    color: #333; /* old IE */
+    background-color: darkgray; /* Modern Browsers */
+    width: 85%;
+}
+
+.hyperlink {
+  color: darkblue;
+  font-size: 15pt;
+}
+
+a:link {
+    color: red;
+}
+
+/* visited link */
+a:visited {
+    color: green;
+}
+
+/* mouse over link */
+a:hover {
+    color: hotpink;
+}
+
+/* selected link */
+a:active {
+    color: blue;
+}
