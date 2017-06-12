@@ -7,11 +7,13 @@ import { Component, OnInit } from '@angular/core';
 })
 export class AboutComponent implements OnInit {
   devCycle: string;
+  deploymentProcess: string;
 
   constructor() { }
 
   ngOnInit() {
-    this.devCycle = "/assets/images/dev_cycle.png"
+    this.devCycle = "/assets/images/dev_cycle.png";
+    this.deploymentProcess = "/assets/images/deployment_process.png";
   }
 
 }
