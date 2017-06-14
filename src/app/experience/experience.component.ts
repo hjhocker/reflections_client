@@ -3,7 +3,7 @@ import { Observable } from 'rxjs/Observable';
 import { HttpService } from '../services/HttpService';
 import { Skill } from './skill';
 
-import { Response }          from '@angular/http';
+import { Response } from '@angular/http';
 
 @Component({
   selector: 'app-experience',

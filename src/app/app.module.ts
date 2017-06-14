@@ -16,10 +16,10 @@ import { ResearchComponent } from './research/research.component';
 import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
 
 const appRoutes: Routes = [
-  {path: 'experience', component: ExperienceComponent},
-  { path: '',   redirectTo: '/experience', pathMatch: 'full' },
+  {path: 'work-experience', component: ExperienceComponent},
+  {path: '',   redirectTo: '/work-experience', pathMatch: 'full'},
   {path: 'education', component: EducationComponent},
-  {path: 'previousresearch', component: ResearchComponent},
+  {path: 'previous-research', component: ResearchComponent},
   {path: 'ots', component: AboutComponent},
   {path: '**', component: PageNotFoundComponent}
 ];
