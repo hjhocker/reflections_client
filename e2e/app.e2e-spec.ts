@@ -7,8 +7,8 @@ describe('reflections-client App', () => {
     page = new ReflectionsClientPage();
   });
 
-  it('should display message saying app works', () => {
+  it('should display message saying employment history', () => {
     page.navigateTo();
-    expect(page.getParagraphText()).toEqual('app works!');
+    expect(page.getParagraphText()).toEqual('Employment History');
   });
 });
