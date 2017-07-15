@@ -22,4 +22,9 @@ describe('reflections-client App', () => {
     expect(page.getParagraphText()).toEqual('Development Cycle');
   });
 
+  it('should display message saying Degrees Earned and Educational Overview', () => {
+    page.navigateToEducation();
+    expect(page.getParagraphText()).toEqual('Degrees Earned and Educational Overview');
+  });
+
 });
