@@ -14,6 +14,6 @@ export class ReflectionsClientPage {
   }
 
   getParagraphText() {
-    return element(by.css('app-root h1')).getText();
+    return element.all(by.css('app-root h1')).first().getText();
   }
 }
