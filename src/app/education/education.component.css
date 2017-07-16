@@ -2,6 +2,21 @@
   text-align: center;
 }
 
+.experience-header {
+  font-size: 12pt;
+  font-style: oblique;
+  font-weight: normal;
+}
+
+.line {
+    border: none;
+    height: 1px;
+    /* Set the hr color */
+    color: #333; /* old IE */
+    background-color: darkgray; /* Modern Browsers */
+    width: 85%;
+}
+
 .top-row {
   margin-bottom: 10px;
 }
