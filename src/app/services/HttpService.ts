@@ -16,4 +16,8 @@ export class HttpService {
     return this.http.get(environment.apiUrl + url);
   }
 
+  getFromServer(host, api) {
+    return this.http.get(host + api);
+  }
+
 }
