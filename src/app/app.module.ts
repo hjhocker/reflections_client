@@ -13,6 +13,7 @@ import { EducationComponent } from './education/education.component';
 import { ExperienceComponent } from './experience/experience.component';
 import { AboutComponent } from './about/about.component';
 import { ResearchComponent } from './research/research.component';
+import { MlComponent } from './ml/ml.component';
 import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
 
 const appRoutes: Routes = [
@@ -21,6 +22,7 @@ const appRoutes: Routes = [
   {path: 'education', component: EducationComponent},
   {path: 'previous-research', component: ResearchComponent},
   {path: 'ots', component: AboutComponent},
+  {path: 'ml', component: MlComponent},
   {path: '**', component: PageNotFoundComponent}
 ];
 
@@ -31,8 +33,10 @@ const appRoutes: Routes = [
     ExperienceComponent,
     AboutComponent,
     ResearchComponent,
+    MlComponent,
     PageNotFoundComponent,
-    CapitalizePipe
+    CapitalizePipe,
+    MlComponent
   ],
   imports: [
     BrowserModule,
