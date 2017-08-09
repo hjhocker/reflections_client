@@ -1,9 +1,7 @@
-<p>
-  ml works!
-</p>
-
-<ul>
-  <li *ngFor="let iris of irisData">
-    {{iris.species}}
-  </li>
-</ul>
+<div>
+  <ul>
+    <li *ngFor="let iris of irisData">
+      {{iris.species}} {{iris.sepalLength}} {{iris.petalLength}}
+    </li>
+  </ul>
+</div>

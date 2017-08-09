@@ -32,6 +32,11 @@
             routerLink="/ots"
             routerLinkActive="active" (click)="clicked($event)">About This Site</a>
       </li>
+      <li *ngIf="enableMl" class="nav-item">
+        <a class="nav-link nav-link-custom"
+            routerLink="/ml"
+            routerLinkActive="active" (click)="clicked($event)">ML</a>
+      </li>
     </ul>
     <!-- <form class="form-inline my-2 my-lg-0">
       <input class="form-control mr-sm-2" type="text" placeholder="Search">
