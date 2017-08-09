@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { Observable } from 'rxjs/Observable';
 import { HttpService } from '../services/HttpService';
 import { Iris } from '../models/Iris';
+import { environment } from '../../environments/environment';
 
 import { Response } from '@angular/http';
 
@@ -19,7 +20,7 @@ export class MlComponent implements OnInit {
   }
 
   ngOnInit() {
-    this.httpService.getFromServer('http://localhost:8000', '/iris/data')
+    this.httpService.getFromServer(environment.mlServer, '/iris/data')
                     .map(this.extractIrisData)
                     .subscribe((data) => this.irisData = data);
     console.log(this.irisData);
