@@ -14,16 +14,25 @@ import { Response } from '@angular/http';
 export class MlComponent implements OnInit {
   httpService: HttpService;
   irisData: Iris[];
+  isIrisDataLoading: boolean;
 
   constructor(httpService: HttpService) {
     this.httpService = httpService;
+    this.isIrisDataLoading = true;
   }
 
   ngOnInit() {
+    this.isIrisDataLoading = true;
     this.httpService.getFromServer(environment.mlServer, '/iris/data')
                     .map(this.extractIrisData)
-                    .subscribe((data) => this.irisData = data);
-    console.log(this.irisData);
+                    .subscribe(
+                       (data) => {
+                      this.irisData = data;
+                      this.isIrisDataLoading = false;
+                    }, (error) => {
+                      this.irisData = [];
+                      this.isIrisDataLoading = false;
+                    });
   }
 
   private extractIrisData(res: Response) {
