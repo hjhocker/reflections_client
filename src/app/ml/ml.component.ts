@@ -5,6 +5,7 @@ import { Iris } from '../models/Iris';
 import { environment } from '../../environments/environment';
 
 import { Response } from '@angular/http';
+import { HttpErrorResponse } from '@angular/common/http';
 
 @Component({
   selector: 'app-ml',
@@ -27,12 +28,21 @@ export class MlComponent implements OnInit {
                     .map(this.extractIrisData)
                     .subscribe(
                        (data) => {
-                      this.irisData = data;
-                      this.isIrisDataLoading = false;
-                    }, (error) => {
-                      this.irisData = [];
-                      this.isIrisDataLoading = false;
+                      this.setIrisData(data);
+                    }, (error: HttpErrorResponse) => {
+                      this.errorIrisData(error);
                     });
+  }
+
+  private setIrisData(data: Iris[]) {
+     this.irisData = data;
+     this.isIrisDataLoading = false;
+  }
+
+  private errorIrisData(error: HttpErrorResponse) {
+    console.log(error);
+    this.irisData = [];
+    this.isIrisDataLoading = false;
   }
 
   private extractIrisData(res: Response) {
