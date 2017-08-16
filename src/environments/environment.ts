@@ -5,5 +5,7 @@
 
 export const environment = {
   production: false,
-  apiUrl: 'http://localhost:9000'
+  apiUrl: 'http://localhost:9000',
+  showMl: true,
+  mlServer: 'http://localhost:8000'
 };

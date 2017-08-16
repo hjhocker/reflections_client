@@ -15,10 +15,18 @@ import 'rxjs/add/operator/map';
 
 export class AppComponent {
   name: string;
+  enableMl: boolean;
 
   constructor(private http: Http) {}
 
-  ngOnInit() {this.getName();}
+  ngOnInit() {
+    this.getName();
+    this.showMl();
+  }
+
+  showMl() {
+    this.enableMl = environment.showMl;
+  }
 
   getName() {
     this.http.get(environment.apiUrl + '/api/name/firstlast')

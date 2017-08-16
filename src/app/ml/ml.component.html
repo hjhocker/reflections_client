@@ -1,0 +1,11 @@
+<div>
+
+    <div *ngIf="isIrisDataLoading">
+      Loading
+    </div>
+  <ul>
+    <li *ngFor="let iris of irisData">
+      {{iris.species}} {{iris.sepalLength}} {{iris.petalLength}}
+    </li>
+  </ul>
+</div>
