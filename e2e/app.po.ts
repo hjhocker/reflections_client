@@ -9,6 +9,10 @@ export class ReflectionsClientPage {
     return browser.get('/previous-research');
   }
 
+  navigateToEducation() {
+    return browser.get('/education');
+  }
+
   navigateToOts() {
     return browser.get('/ots');
   }
